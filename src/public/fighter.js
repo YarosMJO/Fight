@@ -19,7 +19,7 @@ export class Fighter{
 	};
 
 	knockout() {
-		new Promise(resolve =>
+		return new Promise(resolve =>
 		{
 			setTimeout(() => 
 			{

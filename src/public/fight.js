@@ -8,6 +8,7 @@ export async function fight(fighter, improvedFighter, ...point){
 		{
 			console.log(`${fighter.name} in a knockout!!!`);
 			await fighter.knockout();
+			console.log(`${improvedFighter.name} is a champion!!!`);
 			break;
 		} else fighter.hit(improvedFighter, point[i]);
 
@@ -16,6 +17,7 @@ export async function fight(fighter, improvedFighter, ...point){
 		{
 			console.log(`${improvedFighter.name} in a knockout!!!`);
 			await improvedFighter.knockout();
+			console.log(`${fighter.name} is a champion!!!`);
 			break;
 		} else improvedFighter.hit(fighter, point[i]);
 	
